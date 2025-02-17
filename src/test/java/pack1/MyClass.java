@@ -5,7 +5,7 @@ public class MyClass {
 	public static void main(String[] args) {
 
 
-		sjxns
+		System.out.println("I'm the best...!!!!!");
 
 	}
 
