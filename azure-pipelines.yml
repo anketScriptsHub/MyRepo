@@ -18,6 +18,13 @@ steps:
     javaHomeOption: 'JDKVersion'  # Specifies the JDK version
     jdkVersionOption: '1.11'  # Java 11
     jdkArchitectureOption: 'x64'  # 64-bit architecture
-    publishJUnitResults: true  # Publish test results
+    publishJUnitResults: true  # Publish test results to Azure DevOps
     testResultsFiles: '**/surefire-reports/TEST-*.xml'  # Path to JUnit test results
     goals: 'package'  # Goals to run, e.g., compile and package
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'  # Format of the test results (JUnit)
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'  # Path to your test results
+    failTaskOnFailedTests: true  # Ensures the build fails if any tests fail
+    testRunTitle: 'Publish Test Results'  # Title for the test run results
