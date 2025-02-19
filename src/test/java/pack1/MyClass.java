@@ -23,8 +23,12 @@ public class MyClass {
 		    System.out.println("Error in accessing URL: " + e.getMessage());
 		    throw new RuntimeException("Test failed due to invalid URL");
 		}
+		
+		
+		
+		System.out.println("Triggers");
 	}
-	}
+}
 
 
 
