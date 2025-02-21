@@ -17,16 +17,17 @@ public class MyClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		driver.manage().window().maximize();
-		try {
-		    driver.get("ddsfg");
-		} catch (Exception e) {
-		    System.out.println("Error in accessing URL: " + e.getMessage());
-		    throw new RuntimeException("Test failed due to invalid URL");
-		}
 		
-		
-		
+		    driver.get("https://www.facebook.com/login/");
+	 		
 		System.out.println("Triggers");
+		
+		l
+		System.out.println("git add .");
+		System.out.println("git commit -m "+"My commit"+"");
+		System.out.println("git remote origin main "+"https:"+"");
+		System.out.println();
+		
 	}
 }
 
