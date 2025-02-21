@@ -22,7 +22,7 @@ public class MyClass {
 	 		
 		System.out.println("Triggers");
 		
-		l
+		
 		System.out.println("git add .");
 		System.out.println("git commit -m "+"My commit"+"");
 		System.out.println("git remote origin main "+"https:"+"");
